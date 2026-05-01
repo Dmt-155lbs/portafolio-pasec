@@ -1,0 +1,62 @@
+---
+import { FadeIn } from './FadeIn.tsx';
+---
+
+<section id="ciudadania" class="py-24 relative">
+  <div class="absolute left-0 top-1/3 w-[500px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+  <FadeIn client:visible>
+    <div class="flex items-center gap-4 mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold font-outfit text-white">Ciudadanía <span class="text-blue-400">Responsable</span></h2>
+      <div class="h-px bg-slate-700 flex-1"></div>
+    </div>
+  </FadeIn>
+
+  <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <FadeIn client:visible delay={0.2}>
+      <div class="glass-panel p-8 rounded-2xl h-full border-t-4 border-t-slate-600 hover:border-t-slate-400 transition-colors">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-200">Visión Inicial</h3>
+        </div>
+        <p class="text-slate-400 leading-relaxed">
+          Creencia limitada y pasiva. El rol individual se reducía al estricto cumplimiento legal: pagar impuestos, respetar leyes y votar. Una ciudadanía formal, desconectada de la solidaridad cotidiana y ajena a los desafíos de los grupos vulnerables.
+        </p>
+      </div>
+    </FadeIn>
+
+    <FadeIn client:visible delay={0.3}>
+      <div class="glass-panel p-8 rounded-2xl h-full border-t-4 border-t-blue-500 hover:border-t-blue-400 transition-colors bg-blue-950/20">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-blue-100">Visión Transformada</h3>
+        </div>
+        <p class="text-blue-200/80 leading-relaxed">
+          Ejercicio comprometido y proactivo. Implica intervención constante para el bien común, promoviendo la no discriminación activa, vigilando la accesibilidad y utilizando los privilegios propios para combatir las desigualdades estructurales.
+        </p>
+      </div>
+    </FadeIn>
+  </div>
+
+  <FadeIn client:visible delay={0.4}>
+    <div class="glass-panel rounded-2xl p-8 md:p-10">
+      <p class="text-slate-300 leading-relaxed text-justify mb-6">
+        Al inicio de esta experiencia, mi visión de "ser buen ciudadano" era fundamentalmente pasiva y limitada. Influenciado por percepciones comunes, creía que el rol individual se reducía al estricto cumplimiento legal: pagar impuestos puntualmente, respetar las señales de tránsito y ejercer el derecho al voto en cada elección. Consideraba que la responsabilidad ciudadana terminaba ahí, ignorando por completo la dimensión de la solidaridad cotidiana y la empatía activa frente a las realidades de grupos vulnerables. Esta creencia superficial reflejaba una ciudadanía puramente formal, desconectada de la participación real y ajena a los desafíos diarios que enfrentan las personas que sufren de exclusión sistémica.
+      </p>
+      <p class="text-slate-300 leading-relaxed text-justify mb-8">
+        Sin embargo, mi trabajo en FUNAPACE y la inmersión en la realidad social transformaron esta definición de manera radical. Hoy entiendo que la ciudadanía socialmente responsable no es un estado estático, sino el ejercicio comprometido y activo de derechos y deberes para construir el bien común. Situaciones cotidianas, como asistir en técnicas de alimentación o enfrentar la indolencia de un conductor de transporte público hacia un usuario en silla de ruedas, me demostraron que la ciudadanía exige una intervención proactiva. Ser un ciudadano responsable significa ejercer una vigilancia constante contra la discriminación, reportar barreras de accesibilidad y utilizar la "razón cordial" para empoderar a nuestra comunidad con dignidad.
+      </p>
+      
+      <div class="text-center mt-10">
+        <a href="#" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300">
+          <span>Leer ensayo completo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </FadeIn>
+</section>
